@@ -707,7 +707,7 @@
       velocity="1" />
     <mimic joint="Gripper_Idol_Gear_Joint" multiplier="1" offset="0"/> 
   </joint>
-  <!--
+<!--   
   <gazebo>
     <plugin name="MimicJointPlugin" filename="libroboticsgroup_gazebo_mimic_joint_plugin.so">
       joint="Gripper_Idol_Gear_Joint"

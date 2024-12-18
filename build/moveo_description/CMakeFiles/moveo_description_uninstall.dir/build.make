@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jjj/moveo/src/moveo_description
+CMAKE_SOURCE_DIR = /home/jjj/moveo_RoboticArm_ROS2/src/moveo_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jjj/moveo/build/moveo_description
+CMAKE_BINARY_DIR = /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description
 
 # Utility rule file for moveo_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/moveo_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/moveo_description_uninstall.dir/progress.make
 
 CMakeFiles/moveo_description_uninstall:
-	/usr/bin/cmake -P /home/jjj/moveo/build/moveo_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 moveo_description_uninstall: CMakeFiles/moveo_description_uninstall
 moveo_description_uninstall: CMakeFiles/moveo_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/moveo_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/moveo_description_uninstall.dir/clean
 
 CMakeFiles/moveo_description_uninstall.dir/depend:
-	cd /home/jjj/moveo/build/moveo_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jjj/moveo/src/moveo_description /home/jjj/moveo/src/moveo_description /home/jjj/moveo/build/moveo_description /home/jjj/moveo/build/moveo_description /home/jjj/moveo/build/moveo_description/CMakeFiles/moveo_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jjj/moveo_RoboticArm_ROS2/src/moveo_description /home/jjj/moveo_RoboticArm_ROS2/src/moveo_description /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description/CMakeFiles/moveo_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/moveo_description_uninstall.dir/depend
 
