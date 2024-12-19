@@ -14,8 +14,17 @@ install(DIRECTORY meshes/
 install(DIRECTORY urdf/
         DESTINATION share/${PROJECT_NAME}/urdf)
 
-install(DIRECTORY launch rviz
-        DESTINATION share/${PROJECT_NAME}/urdf)
+install(DIRECTORY launch 
+        DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY new_meshes/
+DESTINATION share/${PROJECT_NAME}/new_meshes)
+
+install(DIRECTORY rviz
+DESTINATION share/${PROJECT_NAME})
+
+# install(DIRECTORY config
+# DESTINATION share/${PROJECT_NAME}/config)
         
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
