@@ -9,7 +9,7 @@ from launch.substitutions import Command, LaunchConfiguration
 def generate_launch_description():
     model_arg = DeclareLaunchArgument(
         name="model", 
-        #default_value=os.path.join(get_package_share_directory("moveo_description"), "urdf", "moveo_urdf.urdf.xacro"),
+        #default_value=os.path.join(get_package_share_directory("moveo_description"), "urdf", "moveo.urdf.xacro"),
         default_value=os.path.join(get_package_share_directory("moveo_description"), "urdf", "moveo.urdf"),
 
         description = "Absolute path to the robot URDF file"
