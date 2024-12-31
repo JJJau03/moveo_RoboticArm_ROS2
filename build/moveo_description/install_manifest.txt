@@ -16,6 +16,7 @@
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/example.launch.py
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/gazebo.launch.py
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/display.launch.py
+/home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/rviz/display2.rviz
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/rviz/display.rviz
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/ament_index/resource_index/package_run_dependencies/moveo_description
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/ament_index/resource_index/parent_prefix_path/moveo_description
