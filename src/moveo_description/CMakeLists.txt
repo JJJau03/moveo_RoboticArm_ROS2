@@ -17,8 +17,7 @@ install(DIRECTORY urdf/
 install(DIRECTORY launch 
         DESTINATION share/${PROJECT_NAME})
 
-install(DIRECTORY new_meshes/
-DESTINATION share/${PROJECT_NAME}/new_meshes)
+
 
 install(DIRECTORY rviz
 DESTINATION share/${PROJECT_NAME})

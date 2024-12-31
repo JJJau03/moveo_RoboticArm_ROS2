@@ -55,10 +55,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveo_description/new_meshes" TYPE DIRECTORY FILES "/home/jjj/moveo_RoboticArm_ROS2/src/moveo_description/new_meshes/")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveo_description" TYPE DIRECTORY FILES "/home/jjj/moveo_RoboticArm_ROS2/src/moveo_description/rviz")
 endif()
 
