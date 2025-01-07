@@ -11,6 +11,7 @@
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link5.STL
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_R_pivot.STL
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/new_moveo.urdf.xacro
+/home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/test.txt
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/og.urdf.xacro
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/gazebo.urdf.xacro
 /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/moveo.urdf
