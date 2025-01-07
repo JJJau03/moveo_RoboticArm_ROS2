@@ -37,7 +37,7 @@ def generate_launch_description():
             ' ',
             PathJoinSubstitution(
                 [FindPackageShare('moveo_description'),
-                 'urdf', 'gazebo_urdf.xacro']
+                 'urdf', 'gazebo.urdf.xacro']
             ),
         ]
     )

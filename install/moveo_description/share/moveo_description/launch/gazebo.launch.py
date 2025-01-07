@@ -10,6 +10,8 @@ from launch_ros.parameter_descriptions import ParameterValue
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import SetEnvironmentVariable
+
 
 def generate_launch_description():
 
@@ -67,8 +69,15 @@ def generate_launch_description():
         output="screen",
     )
 
+    # Set GAZEBO_MODEL_PATH to include your mesh directory
+    set_gazebo_model_path = SetEnvironmentVariable(
+        'GAZEBO_MODEL_PATH',
+        os.path.join(get_package_share_directory('moveo_description'), 'share')
+    )
+
     # Launch!
     return LaunchDescription([
+        set_gazebo_model_path,
         DeclareLaunchArgument(
             'use_sim_time',
             default_value='false',

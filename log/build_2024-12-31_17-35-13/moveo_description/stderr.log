@@ -1,6 +1,0 @@
-[31mCMake Error at cmake_install.cmake:58 (file):
-  file INSTALL cannot find
-  "/home/jjj/moveo_RoboticArm_ROS2/src/moveo_description/new_meshes": No such
-  file or directory.
-
-[0m

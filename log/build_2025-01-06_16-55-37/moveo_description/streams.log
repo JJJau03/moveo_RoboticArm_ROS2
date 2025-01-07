@@ -1,0 +1,69 @@
+[0.017s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_description -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_description
+[0.188s] -- The C compiler identification is GNU 13.3.0
+[0.311s] -- The CXX compiler identification is GNU 13.3.0
+[0.339s] -- Detecting C compiler ABI info
+[0.454s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.466s] -- Detecting C compile features
+[0.467s] -- Detecting C compile features - done
+[0.480s] -- Detecting CXX compiler ABI info
+[0.587s] -- Detecting CXX compiler ABI info - done
+[0.598s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.599s] -- Detecting CXX compile features
+[0.599s] -- Detecting CXX compile features - done
+[0.612s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.791s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.983s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.143s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.143s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.148s] -- Added test 'lint_cmake' to check CMake code style
+[1.150s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.153s] -- Added test 'xmllint' to check XML markup files
+[1.156s] -- Configuring done (1.1s)
+[1.160s] -- Generating done (0.0s)
+[1.163s] -- Build files have been written to: /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description
+[1.172s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_description -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_description
+[1.173s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description -- -j12 -l12
+[1.231s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description -- -j12 -l12
+[1.247s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description
+[1.256s] -- Install configuration: ""
+[1.257s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes
+[1.257s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link4.STL
+[1.259s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/base_link.STL
+[1.263s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link2.STL
+[1.269s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_R_gear.STL
+[1.270s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_L_arm.STL
+[1.272s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_L_pivot.STL
+[1.272s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link3.STL
+[1.275s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_R_arm.STL
+[1.276s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link1.STL
+[1.280s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_L_gear.STL
+[1.281s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link5.STL
+[1.289s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/meshes/link_R_pivot.STL
+[1.290s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf
+[1.290s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/gazebo.urdf.xacro
+[1.290s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/moveo.urdf
+[1.291s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/urdf/moveo.urdf.xacro
+[1.291s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch
+[1.291s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/example.launch.py
+[1.291s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/gazebo.launch.py
+[1.292s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/launch/display.launch.py
+[1.292s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/rviz
+[1.292s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/rviz/display2.rviz
+[1.292s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/rviz/display.rviz
+[1.293s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/ament_index/resource_index/package_run_dependencies/moveo_description
+[1.293s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/ament_index/resource_index/parent_prefix_path/moveo_description
+[1.293s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/environment/ament_prefix_path.sh
+[1.293s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/environment/ament_prefix_path.dsv
+[1.294s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/environment/path.sh
+[1.294s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/environment/path.dsv
+[1.294s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/local_setup.bash
+[1.294s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/local_setup.sh
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/local_setup.zsh
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/local_setup.dsv
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/package.dsv
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/ament_index/resource_index/packages/moveo_description
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/cmake/moveo_descriptionConfig.cmake
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/cmake/moveo_descriptionConfig-version.cmake
+[1.295s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_description/share/moveo_description/package.xml
+[1.298s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jjj/moveo_RoboticArm_ROS2/build/moveo_description

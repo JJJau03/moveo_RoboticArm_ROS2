@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: moveo_description
+    relative_path: urdf/moveo.urdf.xacro
+  srdf:
+    relative_path: config/moveo_description.srdf
+  package_settings:
+    author_name: Juan Jose Jauregui Barba
+    author_email: jjjau03@gmail.com
+    generated_timestamp: 1736224482
