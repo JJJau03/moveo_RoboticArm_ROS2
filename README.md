@@ -34,3 +34,4 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
    ```bash
    git clone https://github.com/your_username/moveo_robotic_arm.git
    cd moveo_robotic_arm
+   colcon build
