@@ -35,6 +35,6 @@ joint_limits:
     max_acceleration: 3.0
   joint_R_gear:
     has_velocity_limits: true
-    max_velocity: 3.0
+    max_velocity: 1.0
     has_acceleration_limits: true
-    max_acceleration: 3.0
+    max_acceleration: 1.0

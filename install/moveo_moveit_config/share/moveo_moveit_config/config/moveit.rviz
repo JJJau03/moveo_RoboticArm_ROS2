@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.5
     Tree Height: 144
   - Class: rviz_common/Help
@@ -262,18 +263,18 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.10000000149011612
-        Y: 0.25
-        Z: 0.30000001192092896
+        X: 0.0397106371819973
+        Y: 0.016005830839276314
+        Z: 0.19298937916755676
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.2300000786781311
+      Pitch: 0.2500002980232239
       Target Frame: base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 5.0151824951171875
+      Yaw: 4.575167655944824
     Saved: ~
 Window Geometry:
   Displays:

@@ -34,12 +34,18 @@
         <joint name="joint_R_gear" value="0"/>
     </group_state>
     <group_state name="close" group="gripper">
-        <joint name="joint_R_gear" value="1.3098"/>
+        <joint name="joint_R_gear" value="1.57"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="endeffector" parent_link="link5" group="gripper"/>
+    <end_effector name="end_effector" parent_link="link5" group="gripper" parent_group="arm"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <passive_joint name="joint_L_gear"/>
+    <passive_joint name="joint_L_arm"/>
+    <passive_joint name="joint_L_pivot"/>
+    <passive_joint name="joint_R_arm"/>
+    <passive_joint name="joint_R_pivot"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link1" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="link2" reason="Never"/>
