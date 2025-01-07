@@ -1,6 +1,6 @@
 # Moveo Robotic Arm with ROS2 and MoveIt
 
-![Robotic Arm](https://your_image_url_here) <!-- Add an image or GIF of your project if available -->
+![Robotic Arm](assets/moveo1.png) <!-- Add an image or GIF of your project if available -->
 
 ## Overview
 This repository contains the ROS2 and MoveIt configuration for the Moveo robotic arm. It includes:
