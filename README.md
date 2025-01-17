@@ -24,7 +24,8 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
 
 ## Installation
 ### Prerequisites
-- ROS2 (e.g., Humble or Rolling)
+- Ubuntu 24.04
+- ROS2 (Jazzy Jalisco)
 - MoveIt2
 - Python 3.8+
 - colcon build tools
@@ -43,3 +44,7 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
 3. Launch rviz
    ```bash 
    ros2 launch moveo_moveit_config demo.launch
+
+## Usage
+
+

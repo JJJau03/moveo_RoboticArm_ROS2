@@ -1,0 +1,42 @@
+[0.023s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_gazebo -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo
+[0.084s] -- The C compiler identification is GNU 13.3.0
+[0.148s] -- The CXX compiler identification is GNU 13.3.0
+[0.165s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.280s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.281s] -- Detecting C compile features
+[0.281s] -- Detecting C compile features - done
+[0.291s] -- Detecting CXX compiler ABI info
+[0.421s] -- Detecting CXX compiler ABI info - done
+[0.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.435s] -- Detecting CXX compile features
+[0.435s] -- Detecting CXX compile features - done
+[0.442s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.670s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.841s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.998s] -- Added test 'lint_cmake' to check CMake code style
+[1.000s] -- Added test 'xmllint' to check XML markup files
+[1.002s] -- Configuring done (1.0s)
+[1.007s] -- Generating done (0.0s)
+[1.009s] -- Build files have been written to: /home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo
+[1.014s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_gazebo -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo
+[1.015s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo -- -j12 -l12
+[1.062s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo -- -j12 -l12
+[1.063s] Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo
+[1.072s] -- Install configuration: ""
+[1.072s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/ament_index/resource_index/package_run_dependencies/moveo_gazebo
+[1.072s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/ament_index/resource_index/parent_prefix_path/moveo_gazebo
+[1.072s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/environment/ament_prefix_path.sh
+[1.073s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/environment/ament_prefix_path.dsv
+[1.073s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/environment/path.sh
+[1.073s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/environment/path.dsv
+[1.073s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/local_setup.bash
+[1.074s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/local_setup.sh
+[1.074s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/local_setup.zsh
+[1.074s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/local_setup.dsv
+[1.074s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/package.dsv
+[1.075s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/ament_index/resource_index/packages/moveo_gazebo
+[1.075s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/cmake/moveo_gazeboConfig.cmake
+[1.075s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/cmake/moveo_gazeboConfig-version.cmake
+[1.075s] -- Installing: /home/jjj/moveo_RoboticArm_ROS2/install/moveo_gazebo/share/moveo_gazebo/package.xml
+[1.078s] Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjj/ros2_robot_arm/install/arduinobot_python_examples:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jjj/moveo_RoboticArm_ROS2/build/moveo_gazebo

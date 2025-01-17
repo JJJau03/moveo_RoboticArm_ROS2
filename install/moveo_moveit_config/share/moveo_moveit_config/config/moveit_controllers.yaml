@@ -18,8 +18,13 @@ moveit_simple_controller_manager:
     action_ns: follow_joint_trajectory
     default: true
   gripper_controller:
-    type: GripperCommand
+    type: FollowJointTrajectory
     joints:
       - joint_R_gear
-    action_ns: gripper_cmd
+      - joint_L_gear
+      - joint_R_arm
+      - joint_L_arm
+      - joint_R_pivot
+      - joint_L_pivot
+    action_ns: follow_joint_trajectory
     default: true
