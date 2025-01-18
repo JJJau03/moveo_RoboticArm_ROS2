@@ -1,6 +1,6 @@
 <?xml version="1.0"?> 
 
-<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="arduinobot">
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="moveo_description">
 
     <xacro:property name="PI" value="3.14159"/>
 

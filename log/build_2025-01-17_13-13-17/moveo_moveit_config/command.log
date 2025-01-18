@@ -1,2 +1,0 @@
-Invoking command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_moveit_config': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_moveit_config -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_moveit_config
-Invoked command in '/home/jjj/moveo_RoboticArm_ROS2/build/moveo_moveit_config' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jjj/moveo_RoboticArm_ROS2/src/moveo_moveit_config -DCMAKE_INSTALL_PREFIX=/home/jjj/moveo_RoboticArm_ROS2/install/moveo_moveit_config

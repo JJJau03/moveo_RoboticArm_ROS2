@@ -7,19 +7,4 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: Juan Jose Jauregui Barba
     author_email: jjjau03@gmail.com
-    generated_timestamp: 1737137576
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity
-  modified_urdf:
-    xacros:
-      - control_xacro
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity
+    generated_timestamp: 1737155611

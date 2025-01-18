@@ -32,13 +32,7 @@ arm_controller:
 gripper_controller:
   ros__parameters:
     joints:
-      - joint_R_gear
-      - joint_L_gear
-      - joint_R_arm
-      - joint_L_arm
-      - joint_R_pivot
-      - joint_L_pivot
-     
+      - joint_R_gear     
     command_interfaces:
       - position
     state_interfaces:

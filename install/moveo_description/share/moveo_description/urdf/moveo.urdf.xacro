@@ -392,8 +392,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-1.57"
+      upper="1.57"
       effort="2"
       velocity="3" />
     <mimic
@@ -454,10 +454,10 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.57"
+      upper="1.57"
+      effort="2"
+      velocity="3" />
     <mimic
       joint="joint_R_gear"
       multiplier="1"
@@ -574,10 +574,10 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.57"
+      upper="1.57"
+      effort="2"
+      velocity="3" />
     <mimic
       joint="joint_R_gear"
       multiplier="-1"
@@ -636,10 +636,10 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.57"
+      upper="1.57"
+      effort="2"
+      velocity="3" />
     <mimic
       joint="joint_R_gear"
       multiplier="-1"
@@ -698,10 +698,10 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.57"
+      upper="1.57"
+      effort="2"
+      velocity="3" />
     <mimic
       joint="joint_R_gear"
       multiplier="1"
