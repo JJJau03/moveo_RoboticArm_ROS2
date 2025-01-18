@@ -41,10 +41,15 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
    ```bash
    echo source
 
-3. Launch rviz
-   ```bash 
-   ros2 launch moveo_moveit_config demo.launch
-
 ## Usage
+
+1. Launch Gazebo sim
+   ```bash
+   ros2 launch moveo_description gazebo.launch.py
+2. Launch rviz with moveit
+   ```bash
+   ros2 launch moveo_moveit_config demo.launch.py
+3. Start planing the robot movements
+4. Execute to move the robot
 
 
