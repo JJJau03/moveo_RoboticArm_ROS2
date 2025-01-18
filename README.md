@@ -1,4 +1,4 @@
-# Moveo Robotic Arm with ROS2 and MoveIt
+# Moveo Robotic Arm with ROS2
 
 ![Robotic Arm](assets/moveo1.png)
 
@@ -86,8 +86,10 @@ We welcome contributions to improve this project! If you'd like to contribute, p
 2. Create a new branch for your feature or bug fix.
 3. Make changes and commit them.
 4. Push your branch and create a pull request.
+Make sure to follow the code style and best practices. If you are submitting a bug fix or enhancement, please create an issue first to discuss the changes
 
-Make sure to follow the code style and best practices. If you are submitting a bug fix or enhancement, please create an issue first to discuss the changes.
+## Acknowledgements
+- **BCN3D**: The 3D design of the Moveo robotic arm was created by [BCN3D](https://www.bcn3d.com/bcn3d-moveo-the-future-of-learning-robotic-arm/). Their contributions to the physical design of the robot are greatly appreciated.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
