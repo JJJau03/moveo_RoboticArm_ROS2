@@ -35,8 +35,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.784313725490196 0.784313725490196 0.784313725490196 1" />
+        <color rgba="0.81960784314 0.71764705882 0.54901960784 1" />
       </material>
     </visual>
     <collision>
@@ -75,8 +74,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="1.0 0.647 0.0 1" />
+        <color rgba="0.27450980392 0.50980392157 0.70980392157 1" />
       </material>
     </visual>
     <collision>
@@ -133,8 +131,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="1.0 0.647 0.0 1" />
+        <color rgba="0.27450980392 0.50980392157 0.70980392157 1" />
       </material>
     </visual>
     <collision>
@@ -191,8 +188,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="1.0 0.647 0.0 1" />
+        <color rgba="0.27450980392 0.50980392157 0.70980392157 1" />
       </material>
     </visual>
     <collision>
@@ -249,8 +245,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="1.0 0.647 0.0 1" />
+        <color rgba="0.27450980392 0.50980392157 0.70980392157 1" />
       </material>
     </visual>
     <collision>
@@ -307,8 +302,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="1.0 0.647 0.0 1" />
+        <color rgba="0.27450980392 0.50980392157 0.70980392157 1" />
       </material>
     </visual>
     <collision>
@@ -393,7 +387,7 @@
       xyz="0 -1 0" />
     <limit
       lower="-1.57"
-      upper="1.57"
+      upper="0"
       effort="2"
       velocity="3" />
     <mimic
@@ -454,7 +448,7 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.57"
+      lower="0"
       upper="1.57"
       effort="2"
       velocity="3" />
@@ -575,7 +569,7 @@
       xyz="0 -1 0" />
     <limit
       lower="-1.57"
-      upper="1.57"
+      upper="0"
       effort="2"
       velocity="3" />
     <mimic
@@ -637,7 +631,7 @@
       xyz="0 -1 0" />
     <limit
       lower="-1.57"
-      upper="1.57"
+      upper="0"
       effort="2"
       velocity="3" />
     <mimic
@@ -698,7 +692,7 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="-1.57"
+      lower="0"
       upper="1.57"
       effort="2"
       velocity="3" />
