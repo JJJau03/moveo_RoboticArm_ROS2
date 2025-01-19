@@ -43,14 +43,14 @@ Before proceeding with the installation, ensure the following dependencies are i
 1. **Clone the Repository**:
    Clone this repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/your_username/moveo_robotic_arm.git   
+   git clone https://github.com/JJJau03/moveo_RoboticArm_ROS2.git
 2. **Build the workspace**: Navigate to the project folder and build the workspace
    ```bash
    cd moveo_robotic_arm
    colcon build
 3. **Source the workspace**: To source the workspace so that ROS2 recognizes the packages, add the following to your ~/.bashrc file
    ```bash
-   echo "source /home/jjj/workspace/install/setup.bash" >> ~/.bashrc
+   echo "source /home/<your_username>/moveo_RoboticArm_ROS2/install/setup.bash" >> ~/.bashrc
    source ~/.bashrc
 ## Usage
 
