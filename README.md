@@ -72,10 +72,8 @@ Once the movement is planned, you can execute it either through RViz or by using
 ### URDF Model
 The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations. 
 
-<p align="left">
+<p align="center">
   <img src="assets/moveo1.gif" width="300" />
-</p>
-<p align="right">
   <img src="assets/moveo4.gif" width="300" />
 </p>
 
