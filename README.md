@@ -70,7 +70,7 @@ In RViz, you can interact with the MoveIt2 interface to plan movements for the r
 Once the movement is planned, you can execute it either through RViz or by using custom ROS2 commands to move the robotic arm in a real or simulated environment.
 ## Configuration
 ### URDF Model
-The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations.
+The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations. ![Robotic Arm](assets/moveo1.gif)
 
 ### MoveIt2 Setup
 The MoveIt2 configuration files are located in the `moveo_moveit_config` folder. This includes:
