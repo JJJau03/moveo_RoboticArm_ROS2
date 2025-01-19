@@ -26,7 +26,7 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Configuration](#configuration)
-4. [Contributing](#contributing)
+4. [Acknowledgements](#Acknowledgements)
 5. [License](#license)
 
 ## Installation
