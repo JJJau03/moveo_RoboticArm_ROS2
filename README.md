@@ -1,6 +1,9 @@
 # Moveo Robotic Arm with ROS2
 
-![Robotic Arm](assets/moveo2.gif)
+<p align="center">
+  <img src="assets/moveo3.png" width="48%" style="margin-right: 2%;" />
+  <img src="assets/moveo2.png" width="48%" />
+</p>
 
 ## Overview
 This repository contains the ROS2 and MoveIt configuration for the Moveo robotic arm. The project provides a simulation environment and motion planning framework for the 5-DOF Moveo robotic arm, developed for research and educational purposes. Key components include:
