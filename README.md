@@ -62,11 +62,19 @@ This will open the Moveo robotic arm in the Gazebo environment where you can vis
    ```bash
    ros2 launch moveo_description gazebo.launch.py
    ```
+<p align="center">
+  <img src="assets/moveo4.png" />
+</p>
+
 ### 2. Launch RViz with MoveIt
 Next, launch RViz with MoveIt2, which will allow you to visualize the arm's movements and plan actions in a 3D environment.
    ```bash
    ros2 launch moveo_moveit_config demo.launch.py
    ```
+<p align="left">
+  <img src="assets/moveo5.png" />
+</p>
+
 ### 3. Plan the Robot Movements
 In RViz, you can interact with the MoveIt2 interface to plan movements for the robotic arm. Use the "Planning" panel to set target poses and manipulate the arm.
 ### 4. Execute the Plan
