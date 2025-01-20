@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="assets/moveo3.png" width="48%"  height="50%" style="margin-right: 2%;" />
-  <img src="assets/moveo2.png" width="48%" height="50%"/>
+  <img src="assets/moveo2.png" width="48%" height="80%"/>
 </p>
 
 ## Overview
