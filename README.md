@@ -26,7 +26,7 @@ This repository contains the ROS2 and MoveIt configuration for the Moveo robotic
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Configuration](#configuration)
-4. [Contributing](#contributing)
+4. [Acknowledgements](#Acknowledgements)
 5. [License](#license)
 
 ## Installation
@@ -71,7 +71,11 @@ Once the movement is planned, you can execute it either through RViz or by using
 ## Configuration
 ### URDF Model
 The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations. 
-![Robotic Arm](assets/moveo1.gif)
+
+<p align="center">
+  <img src="assets/moveo1.gif" width="48%" style="margin-right: 2%;" />
+  <img src="assets/moveo4.gif" width="48%" />
+</p>
 
 ### MoveIt2 Setup
 The MoveIt2 configuration files are located in the `moveo_moveit_config` folder. This includes:
