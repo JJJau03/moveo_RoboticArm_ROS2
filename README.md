@@ -1,9 +1,12 @@
 # Moveo Robotic Arm with ROS2
 
-![Robotic Arm](assets/moveo2.gif)
+<p align="center">
+  <img src="assets/moveo3.png" width="48%" height="500" style="margin-right: 2%;" />
+  <img src="assets/moveo2.png" width="48%" height="500"/>
+</p>
 
 ## Overview
-This repository contains the ROS2 and MoveIt configuration for the Moveo robotic arm. The project provides a simulation environment and motion planning framework for the 5-DOF Moveo robotic arm, developed for research and educational purposes. Key components include:
+This repository contains the ROS2 and MoveIt configuration for the Moveo robotic arm. The project provides a simulation environment and motion planning framework for the 5-DOF Moveo robotic arm. Key components include:
 - A URDF/Xacro model of the Moveo arm.
 - ROS2 integration for controlling the arm's joints and gripper.
 - MoveIt2 configuration for advanced motion planning and execution.
@@ -59,15 +62,28 @@ This will open the Moveo robotic arm in the Gazebo environment where you can vis
    ```bash
    ros2 launch moveo_description gazebo.launch.py
    ```
+<p align="center">
+  <img src="assets/moveo4.png" width="500"/>
+</p>
+
 ### 2. Launch RViz with MoveIt
 Next, launch RViz with MoveIt2, which will allow you to visualize the arm's movements and plan actions in a 3D environment.
    ```bash
    ros2 launch moveo_moveit_config demo.launch.py
    ```
+<p align="center">
+  <img src="assets/moveo5.png" width="500"/>
+</p>
+
 ### 3. Plan the Robot Movements
 In RViz, you can interact with the MoveIt2 interface to plan movements for the robotic arm. Use the "Planning" panel to set target poses and manipulate the arm.
 ### 4. Execute the Plan
 Once the movement is planned, you can execute it either through RViz or by using custom ROS2 commands to move the robotic arm in a real or simulated environment.
+
+<p align="center">
+  <img src="assets/moveo2.gif" width="850"/>
+</p>
+
 ## Configuration
 ### URDF Model
 The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations. 
@@ -84,14 +100,6 @@ The MoveIt2 configuration files are located in the `moveo_moveit_config` folder.
 
 ### Gazebo Simulation
 The simulation setup for Gazebo is found in the `moveo_description` directory. You can modify the launch files to adjust the environment or robot behavior within Gazebo.
-
-## Contributing
-We welcome contributions to improve this project! If you'd like to contribute, please follow these steps:
-1. Fork this repository.
-2. Create a new branch for your feature or bug fix.
-3. Make changes and commit them.
-4. Push your branch and create a pull request.
-Make sure to follow the code style and best practices. If you are submitting a bug fix or enhancement, please create an issue first to discuss the changes
 
 ## Acknowledgements
 - **BCN3D**: The 3D design of the Moveo robotic arm was created by [BCN3D](https://www.bcn3d.com/bcn3d-moveo-the-future-of-learning-robotic-arm/). Their contributions to the physical design of the robot are greatly appreciated.

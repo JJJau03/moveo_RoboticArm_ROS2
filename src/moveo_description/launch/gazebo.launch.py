@@ -24,12 +24,11 @@ def generate_launch_description():
     )
 
     # Adjust ROS_DISTRO and set physics engine accordingly
-    ros_distro = os.getenv("ROS_DISTRO", "jazzy")  # Default to "foxy" if undefined
+    ros_distro = os.getenv("ROS_DISTRO", "jazzy")  
     is_ignition = "True" if ros_distro == "jazzy" else "False"
     physics_engine = "" if ros_distro == "foxy" else "--physics_engine gz-physics-bullet-featherstone-plugin"
 
     # Robot description parameter
-    # robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("model"), " is_ignition:=", is_ignition]), value_type=str)
     robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("model")]), value_type=str)
 
     
