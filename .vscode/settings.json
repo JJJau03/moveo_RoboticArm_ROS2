@@ -6,5 +6,6 @@
     "python.analysis.extraPaths": [
         "/home/jjj/ros2_robot_arm/install/arduinobot_python_examples/lib/python3.12/site-packages",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
-    ]
+    ],
+    "ros.distro": "jazzy"
 }

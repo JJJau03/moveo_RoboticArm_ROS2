@@ -9,8 +9,7 @@ controller_manager:
 
     gripper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
-
-
+      
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -38,4 +37,5 @@ gripper_controller:
     state_interfaces:
       - position
       # - velocity
+    #allow_integration_in_goal_trajectories: true
     # allow_nonzero_velocity_at_trajectory_end: true
