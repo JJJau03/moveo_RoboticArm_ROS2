@@ -1,29 +1,31 @@
 {
     "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "jjj",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "USERNAME": "jjj"
+            "USERNAME": "${localEnv:USER:-rosuser}"
         }
     },
-    "workspaceFolder": "/home/moveo_docker",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/moveo_docker,type=bind",
+    "workspaceFolder": "/home/${localEnv:USER:-rosuser}/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/${localEnv:USER:-rosuser}/workspace,type=bind",
     "customizations": {
         "vscode": {
-            "extensions":[
+            "extensions": [
                 "ms-vscode.cpptools",
                 "ms-vscode.cpptools-themes",
                 "twxs.cmake",
                 "donjayamanne.python-extension-pack",
                 "eamodio.gitlens",
                 "ms-iot.vscode-ros"
-            ]
+            ],
+            "settings": {
+                "ros.distro": "jazzy"
+            }
         }
     },
     "containerEnv": {
-        "DISPLAY": "unix:0",
+        "DISPLAY": "${localEnv:DISPLAY}",
         "ROS_LOCALHOST_ONLY": "1",
         "ROS_DOMAIN_ID": "42"
     },
@@ -31,11 +33,12 @@
         "--net=host",
         "--pid=host",
         "--ipc=host",
-        "-e", "DISPLAY=${env:DISPLAY}"
+        "-e", "DISPLAY=${localEnv:DISPLAY}",
+        "-e", "QT_X11_NO_MITSHM=1"
     ],
     "mounts": [
-       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
-       "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/moveo_docker"
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R ${localEnv:USER:-rosuser}:${localEnv:USER:-rosuser} /home/${localEnv:USER:-rosuser}"
 }
