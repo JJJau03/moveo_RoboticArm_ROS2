@@ -1,5 +1,5 @@
 {
-    "name": "ROS 2 Development Container",
+    "name": "MOVEO ROS2 Container",
     "privileged": true,
     "build": {
         "dockerfile": "Dockerfile",
