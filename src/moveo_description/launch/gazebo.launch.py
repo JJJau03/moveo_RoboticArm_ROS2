@@ -23,15 +23,12 @@ def generate_launch_description():
         value=[str(Path(arduinobot_description_dir).parent.resolve())]
     )
 
-    # Adjust ROS_DISTRO and set physics engine accordingly
-    ros_distro = os.getenv("ROS_DISTRO", "jazzy")  
-    is_ignition = "True" if ros_distro == "jazzy" else "False"
-    physics_engine = "" if ros_distro == "foxy" else "--physics_engine gz-physics-bullet-featherstone-plugin"
+    physics_engine = "--physics_engine gz-physics-bullet-featherstone-plugin"
 
     # Robot description parameter
     robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("model")]), value_type=str)
 
-    
+
     # Robot State Publisher
     robot_state_publisher = Node(
         package="robot_state_publisher",
