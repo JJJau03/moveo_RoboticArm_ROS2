@@ -1,6 +1,6 @@
 # Moveo Robotic Arm with ROS2
 
-<p align="cleft">
+<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <a href="https://docs.ros.org/en/jazzy/"><img src="https://img.shields.io/badge/ROS2-Jazzy_Jalisco-brightgreen" alt="ROS2"></a>
   <a href="https://ubuntu.com/"><img src="https://img.shields.io/badge/Ubuntu-24.04-orange" alt="Ubuntu"></a>
@@ -12,110 +12,185 @@
   <img src="assets/moveo3.png" width="48%" height="500"/>
 </p>
 
-## Overview
-This repository contains the ROS2 and MoveIt configuration for the Moveo robotic arm. The project provides a simulation environment and motion planning framework for the 5-DOF Moveo robotic arm. Key components include:
-- A URDF/Xacro model of the Moveo arm.
-- ROS2 integration for controlling the arm's joints and gripper.
-- MoveIt2 configuration for advanced motion planning and execution.
-- Simulation and visualization in RViz and Gazebo.
+## What is Moveo?
 
-### Components:
-- **URDF/Xacro Model**: A parameterized model of the robotic arm, allowing you to customize the configuration.
-- **ROS2 Control**: Handles communication with hardware or simulated interfaces for real-time control.
-- **MoveIt2**: Provides motion planning, kinematics, and trajectory execution for the robotic arm.
-- **Gazebo Simulation**: A physics engine for testing and visualizing the arm's movements before deploying to hardware.
+A complete ROS2 simulation and control framework for the **5-DOF Moveo collaborative robotic arm**. This repository provides:
+- **Full robot description** in URDF/Xacro with physics simulation
+- **Motion planning** using MoveIt2 and OMPL algorithms
+- **Gazebo simulation** for testing before hardware deployment
+- **Real-time visualization** in RViz with trajectory planning
+- **Gripper control** for pick-and-place manipulation tasks
 
-## Features
-- **5-DOF (Degrees of Freedom)**: Provides flexible movement for a variety of tasks.
-- **Gripper Integration**: Supports object manipulation, ideal for pick-and-place tasks.
-- **Motion Planning**: Using OMPL for motion planning, with custom controllers for enhanced accuracy.
-- **Gazebo Compatibility**: Simulation environment for testing robotic movements without physical hardware.
-- **RViz Visualization**: Real-time visualization of the robotic arm's pose, trajectory, and environment.
+Perfect for robotics research, education, and autonomous manipulation workflows.
+
+## Quick Start
+
+### Run the simulator
+```bash
+ros2 launch moveo_bringup moveo.launch.py
+```
+
+This opens Gazebo (physics simulator) and RViz (motion planner interface). Plan and execute arm movements interactively.
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Configuration](#configuration)
-4. [Acknowledgements](#Acknowledgements)
-5. [License](#license)
+2. [Project Structure](#project-structure)
+3. [Usage](#usage)
+4. [Customization](#customization)
+5. [Key Features](#key-features)
+6. [Acknowledgements](#acknowledgements)
+7. [License](#license)
 
 ## Installation
 ### Prerequisites
-Before proceeding with the installation, ensure the following dependencies are installed on your system:
 
-- **Operating System**: Ubuntu 24.04 (or a supported version)
-- **ROS2 (Jazzy Jalisco)**: The version of ROS2 required for this project.
-- **Rviz**: Visualization tool for interacting with ROS.
-- **MoveIt2**: Motion planning framework for ROS2.
-- **Gazebo**: Simulation platform for testing robot models.
+- **Ubuntu 24.04** (or Docker for other versions)
+- **ROS2 Jazzy Jalisco** installed
+- **MoveIt2**, **Gazebo**, **RViz2** (typically installed with ROS2)
 
-### Steps to Install
-**If you have ubuntu 24.04 with ROS2 Jazzy follow the following steps.**
-1. **Clone the Repository**:
-   Clone this repository to your local machine using the following command:
+### Option A: Native Installation (Ubuntu 24.04 + ROS2 Jazzy)
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/JJJau03/moveo_RoboticArm_ROS2.git
+   cd moveo_RoboticArm_ROS2
    ```
-2. **Build the workspace**: Navigate to the project folder and build the workspace
+
+2. **Build the workspace**
    ```bash
-   cd moveo_robotic_arm
    colcon build
    ```
-3. **Source the workspace**: To source the workspace so that ROS2 recognizes the packages, add the following to your ~/.bashrc file
+
+3. **Source the workspace**
    ```bash
-   echo "source /home/<your_username>/moveo_RoboticArm_ROS2/install/setup.bash" >> ~/.bashrc
+   echo "source $(pwd)/install/setup.bash" >> ~/.bashrc
    source ~/.bashrc
    ```
-**If you have and older version of Ubuntu and ROS2 follow the following steps.**
-1. **Clone the Repository**:
-   Clone this repository to your local machine using the following command:
+
+### Option B: Docker (any OS)
+
+For Ubuntu versions older than 24.04, or to avoid dependency conflicts:
+
+1. **Clone the repository** (same as above)
+
+2. **Open in VS Code**
    ```bash
-   git clone https://github.com/JJJau03/moveo_RoboticArm_ROS2.git
+   code .
    ```
-2. **Open moveo_RoboticArm_ROS2 folder on VsCode.**
 
 3. **Reopen in container**
-   This will download the ROS2 Jazzy image, and al the necessary packages. (It will take a few minutes)
+   - VS Code will detect `.devcontainer/` and prompt to "Reopen in Container"
+   - This downloads the ROS2 Jazzy image with all dependencies (takes a few minutes)
+
+4. **Build inside container**
+   ```bash
+   colcon build
+   ```
+## Project Structure
+
+```
+src/
+├── moveo_description/       # Robot URDF model and Gazebo simulation setup
+│   ├── urdf/               # URDF/Xacro files defining arm geometry
+│   ├── meshes/             # 3D mesh files for visualization
+│   ├── launch/             # Gazebo launch scripts
+│   └── rviz/               # RViz configuration files
+│
+├── moveo_moveit_config/    # Motion planning and kinematics configuration
+│   ├── config/             # YAML configs for planning and controllers
+│   └── launch/             # MoveIt2 and planning scene launch files
+│
+├── moveo_bringup/          # Main integration package
+│   └── launch/             # Top-level launcher (moveo.launch.py)
+│
+└── moveo_arduino/          # Hardware control interface (for real robot)
+    ├── src/                # Node source code
+    └── scripts/            # Hardware communication scripts
+```
+
 ## Usage
 
-### 1. Launch Gazebo and RViz with MoveIt
-This will open the Moveo robotic arm in the Gazebo environment where you can visualize its movements.
-   ```bash
-   ros2 launch moveo_bringup moveo.launch.py
-   ```
+### Start the simulation
+```bash
+ros2 launch moveo_bringup moveo.launch.py
+```
+
+This launches:
+- **Gazebo**: Physics simulator showing the arm in a virtual environment
+- **RViz**: Interactive motion planning interface
+- **MoveIt2**: Motion planning backend (OMPL planners)
+
 <p align="left">
   <img src="assets/moveo4.png" width="48%"/>
   <img src="assets/moveo5.png" width="51%"/>
 </p>
 
-### 3. Plan the Robot Movements
-In RViz, you can interact with the MoveIt2 interface to plan movements for the robotic arm. Use the "Planning" panel to set target poses and manipulate the arm.
-### 4. Execute the Plan
-Once the movement is planned, you can execute it either through RViz or by using custom ROS2 commands to move the robotic arm in a real or simulated environment.
+### Workflow: Plan and Execute
+
+1. **Set a target pose** in RViz
+   - Click and drag the end-effector to a desired position
+   - Or use the "Planning" panel to enter joint angles
+
+2. **Plan the motion**
+   - Click "Plan" in RViz to generate a collision-free trajectory
+   - The trajectory is computed using OMPL motion planning algorithms
+
+3. **Execute the trajectory**
+   - Click "Execute" to move the arm along the planned path
+   - The Gazebo simulator shows the arm's movement in real-time
 
 <p align="center">
   <img src="assets/moveo6.gif" width="850"/>
 </p>
 
-## Configuration
-### URDF Model
-The Moveo robotic arm is described using a URDF model (`moveo_description/urdf/moveo_arm.xacro`). You can modify this file to adjust the arm's physical properties or to fit different robot configurations. 
+## Customization
+
+### Modify the arm geometry
+Edit the URDF/Xacro model at `src/moveo_description/urdf/moveo_arm.xacro` to:
+- Adjust link lengths and joint ranges
+- Change link masses and inertias
+- Modify gripper parameters
+- Add or remove sensors
+
+After changes, rebuild and relaunch:
+```bash
+colcon build
+ros2 launch moveo_bringup moveo.launch.py
+```
+
+### Adjust motion planning behavior
+Motion planning parameters are in `src/moveo_moveit_config/config/`:
+- **ompl_planning.yaml**: OMPL planner settings (planning time, sampling strategies)
+- **controllers.yaml**: Trajectory controller configurations
+- **joint_limits.yaml**: Joint velocity and acceleration limits
+
+Changes take effect on next launch without rebuilding.
+
+### Configure the simulation environment
+Modify `src/moveo_description/launch/gazebo.launch.py` to:
+- Add obstacles or objects to the scene
+- Change gravity or physics engine settings
+- Adjust camera viewpoints
+- Add additional sensors (depth cameras, force/torque sensors)
 
 <p align="center">
   <img src="assets/moveo1.gif" width="48%" style="margin-right: 2%;" />
   <img src="assets/moveo4.gif" width="48%" />
 </p>
 
-### MoveIt2 Setup
-The MoveIt2 configuration files are located in the `moveo_moveit_config` folder. This includes:
-- **MoveIt configuration YAML files**: These contain the robot's kinematic chain, motion planning settings, and trajectory constraints.
-- **Launch files**: Used to start MoveIt2 and RViz for motion planning and execution.
+## Key Features
 
-### Gazebo Simulation
-The simulation setup for Gazebo is found in the `moveo_description` directory. You can modify the launch files to adjust the environment or robot behavior within Gazebo.
+- **5-DOF Arm**: Flexible manipulation for diverse tasks
+- **Gripper Control**: Integrated end-effector for pick-and-place operations
+- **Motion Planning**: OMPL-based collision-free trajectory planning
+- **Physics Simulation**: Gazebo environment for safe testing before hardware deployment
+- **Real-time Visualization**: RViz integration for monitoring and control
+- **Modular Design**: Easy to extend with sensors, controllers, or custom planners
 
 ## Acknowledgements
+
 - **BCN3D**: The 3D design of the Moveo robotic arm was created by [BCN3D](https://www.bcn3d.com/bcn3d-moveo-the-future-of-learning-robotic-arm/). Their contributions to the physical design of the robot are greatly appreciated.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
