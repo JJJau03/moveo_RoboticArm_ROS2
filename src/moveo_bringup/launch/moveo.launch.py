@@ -1,9 +1,13 @@
 import os
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, TimerAction
+from launch_ros.actions import SetParameter
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    # Set use_sim_time for all nodes
+    use_sim_time = SetParameter(name="use_sim_time", value=True)
+
     # Launch Gazebo simulation
     gazebo = IncludeLaunchDescription(
         os.path.join(
@@ -12,7 +16,7 @@ def generate_launch_description():
             "gazebo.launch.py"
         )
     )
-        
+
     # Launch MoveIt for motion planning
     moveit = IncludeLaunchDescription(
         os.path.join(
@@ -22,15 +26,16 @@ def generate_launch_description():
         ),
         launch_arguments={"is_sim": "True"}.items()
     )
-    
-    # Add a delay before launching MoveIt
+
+    # Add a delay before launching MoveIt to ensure Gazebo is ready
     moveit_with_delay = TimerAction(
-        period=4.0,  # Delay in seconds
+        period=5.0,  # Delay in seconds
         actions=[moveit]
     )
-    
-    # Return the launch description with Gazebo and MoveIt (with delay)
+
+    # Return the launch description with use_sim_time, Gazebo and MoveIt (with delay)
     return LaunchDescription([
+        use_sim_time,
         gazebo,
         moveit_with_delay
     ])
