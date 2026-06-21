@@ -26,6 +26,7 @@ RUN apt-get update && apt-get upgrade -y \
     ros-jazzy-joint-state-publisher-gui \
     ros-jazzy-tf-transformations \
     ros-jazzy-moveit* \
+    ros-jazzy-rmw-cyclonedds-cpp \
     && rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update -y 
