@@ -20,6 +20,7 @@ A complete ROS2 simulation and control framework for the **5-DOF Moveo collabora
 - **Gazebo simulation** for testing before hardware deployment
 - **Real-time visualization** in RViz with trajectory planning
 - **Gripper control** for pick-and-place manipulation tasks
+- **Natural language control** via Claude AI (Anthropic API)
 
 Perfect for robotics research, education, and autonomous manipulation workflows.
 
@@ -32,14 +33,26 @@ ros2 launch moveo_bringup moveo.launch.py
 
 This opens Gazebo (physics simulator) and RViz (motion planner interface). Plan and execute arm movements interactively.
 
+### Control the arm with natural language (optional)
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+ros2 launch moveo_ai claude_commander.launch.py
+```
+
+Then in a second terminal:
+```bash
+ros2 run moveo_ai commander_cli
+```
+
 ## Table of Contents
 1. [Installation](#installation)
 2. [Project Structure](#project-structure)
 3. [Usage](#usage)
-4. [Customization](#customization)
-5. [Key Features](#key-features)
-6. [Acknowledgements](#acknowledgements)
-7. [License](#license)
+4. [Natural Language Control](#natural-language-control)
+5. [Customization](#customization)
+6. [Key Features](#key-features)
+7. [Acknowledgements](#acknowledgements)
+8. [License](#license)
 
 ## Installation
 ### Prerequisites
@@ -103,6 +116,13 @@ src/
 ├── moveo_bringup/          # Main integration package
 │   └── launch/             # Top-level launcher (moveo.launch.py)
 │
+├── moveo_ai/               # Natural language control via Claude AI
+│   ├── moveo_ai/           # Python package
+│   │   ├── claude_commander.py  # ROS2 node: translates text → MoveIt2 goals
+│   │   └── commander_cli.py     # Terminal prompt for sending commands
+│   └── launch/
+│       └── claude_commander.launch.py
+│
 └── moveo_arduino/          # Hardware control interface (for real robot)
     ├── src/                # Node source code
     └── scripts/            # Hardware communication scripts
@@ -142,6 +162,31 @@ This launches:
 <p align="center">
   <img src="assets/moveo6.gif" width="850"/>
 </p>
+
+## Natural Language Control
+
+<p align="center">
+  <a href="assets/demo.mp4">▶ Watch Demo</a>
+</p>
+
+The `moveo_ai` package lets you control the arm in plain English using the [Anthropic Claude API](https://console.anthropic.com). Requires an API key from [console.anthropic.com](https://console.anthropic.com).
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+ros2 launch moveo_ai claude_commander.launch.py
+```
+
+Then in a second terminal:
+```bash
+ros2 run moveo_ai commander_cli
+```
+
+| Command | Action |
+|---|---|
+| `go home` | All joints to 0 rad |
+| `move to pose1` | Named pose |
+| `open / close the gripper` | Gripper control |
+| `move joints to 0, 0.5, -0.3, 0, 0` | Raw joint angles (rad, ±1.57 limit) |
 
 ## Customization
 
@@ -185,6 +230,7 @@ Modify `src/moveo_description/launch/gazebo.launch.py` to:
 - **Motion Planning**: OMPL-based collision-free trajectory planning
 - **Physics Simulation**: Gazebo environment for safe testing before hardware deployment
 - **Real-time Visualization**: RViz integration for monitoring and control
+- **Natural Language Control**: Claude AI translates plain English into arm movements
 - **Modular Design**: Easy to extend with sensors, controllers, or custom planners
 
 ## Acknowledgements
