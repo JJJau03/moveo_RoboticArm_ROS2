@@ -166,7 +166,7 @@ This launches:
 ## Natural Language Control
 
 <p align="center">
-  <a href="assets/demo.mp4">▶ Watch Demo</a>
+  <img src="assets/demo.gif" width="80%" alt="Moveo AI Demo"/>
 </p>
 
 The `moveo_ai` package lets you control the arm in plain English using the [Anthropic Claude API](https://console.anthropic.com). Requires an API key from [console.anthropic.com](https://console.anthropic.com).
